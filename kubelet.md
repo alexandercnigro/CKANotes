@@ -1,0 +1,6 @@
+- load/unload containers
+- report on contain status to master node
+- registers worker nodes with the cluster
+- requests the container runtime engine to pull images
+- kubeadm does NOT deploy kubelets
+    - must manually install it on worker nodes

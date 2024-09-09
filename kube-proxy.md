@@ -1,0 +1,10 @@
+- every pod can reach every other pod
+- pod network is where all pods connect to communicate w each other
+    - services cannot join pod networks
+    - they are purely virtual
+- kube-proxy runs on each node in the cluster
+    - looks for new services
+    - creates rules on each node to forward traffic from services to the underlying pods
+    - creats an IP tables rule
+- download kubeproxy binary from kubernetes release page
+- deployed as a daemonset
