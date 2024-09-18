@@ -1,5 +1,5 @@
 - load/unload containers
-- report on contain status to master node
+- report on container status to master node
 - registers worker nodes with the cluster
 - requests the container runtime engine to pull images
 - kubeadm does NOT deploy kubelets
