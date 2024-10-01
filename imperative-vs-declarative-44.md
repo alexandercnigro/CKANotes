@@ -1,0 +1,12 @@
+- imperative
+    - giving a set of instructions to arrive at the desired state
+    - in k8s, this would be using the CLI to perform actions such as:
+        - creating pods via `kubectl run`
+        - creating deployments via `kubectl create`
+        - editing deployments via `kubectl edit`
+    - good for quick changes
+    - bad for keeping track of what was changed
+    
+- declarative
+    - giving the desired state and letting the system figure out how to get there
+    - in k8s, this would be using yaml files to define your object, then using `kubectl apply` to do exactly what is stated
