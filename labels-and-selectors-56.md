@@ -1,0 +1,3 @@
+- standard method to group things together used for filtering
+- to select pods with specific lables for example use
+    - kubectl get pods --selector app=App1

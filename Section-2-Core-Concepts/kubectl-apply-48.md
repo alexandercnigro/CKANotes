@@ -1,0 +1,5 @@
+- considers the local k8s resource definition file, the live object configuration, and the last applied configuration before making a decision
+- when you update the local config, k8s diffs it with the live configuration object
+- if it sees a difference, it updates the live configuration object
+- k8s also keeps track of the last applied configuration
+- if you remove an item from the local config, k8s will check the live configuration object against the last applied configuration and trigger a removal of that attribute from the live configuration object
