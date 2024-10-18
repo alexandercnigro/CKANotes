@@ -1,0 +1,5 @@
+- property in the pod spec "nodeSelector"
+- you can use a label that was applied to the nodes ahead of time to select particular ones
+- useful for simple selection such as "add this pod to a node that has the label size:large"
+    - not useful for more complex selections such as "add this pod to a node that is medium or large" or "add this pod to a node that is not small"
+- `kubectl label nodes <node-name> <key>=<value>`
